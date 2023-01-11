@@ -1,9 +1,9 @@
 #!/usr/bin/env phpunit
 <?php
 
-require_once ('PHPUnit/Framework/TestCase.php');
+use PHPUnit\Framework\TestCase;
 
-class CSVCombinerTest extends \PHPUnit\Framework\TestCase
+class CSVCombinerTest extends TestCase
 {
     public function testBasic()
     {
@@ -24,5 +24,11 @@ class CSVCombinerTest extends \PHPUnit\Framework\TestCase
         unlink($testFile2);
         unlink($testFile3);
         unlink($expectedFile);
+    }
+
+    public function testBadInput()
+    {
+        $output = shell_exec('./csv-combiner.php');
+        $this->assertStringContainsString("Please specify the CSV files to process.", $output);
     }
 }

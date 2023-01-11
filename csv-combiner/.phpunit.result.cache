@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":86:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:1:{s:26:"CSVCombinerTest::testBasic";d:0.032;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":307:{a:2:{s:7:"defects";a:2:{s:31:"CsvCombinerTest::testCombineCsv";i:4;s:29:"CsvCombinerTest::testBadInput";i:6;}s:5:"times";a:4:{s:26:"CSVCombinerTest::testBasic";d:0.018;s:31:"CsvCombinerTest::testCombineCsv";d:0.022;s:29:"CsvCombinerTest::testBadInput";d:0.016;s:29:"CSVCombinerTest::testBadInput";d:0.018;}}}
